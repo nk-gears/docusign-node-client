@@ -68,8 +68,8 @@ var hostUrl = 'http://' + host + ':' + port;
 // Configure Passport
 passport.use(new docusign.OAuthClient({
   sandbox: true,
-  clientID: 'ae30ea4e-3959-4d1c-b867-fcb57d2dc4df',
-  clientSecret: 'b4dccdbe-232f-46cc-96c5-b2f0f7448f8f',
+  clientID: 'YOUR_CLIENT_ID',
+  clientSecret: 'YOUR_CLIENT_SECRET',
   callbackURL: hostUrl + '/auth/callback'
 },
   function (accessToken, refreshToken, user, done) {
